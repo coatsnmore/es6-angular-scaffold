@@ -196,6 +196,14 @@ gulp.task('serve:dist', ['package'], function() {
       baseDir: [config.dir.dist]
     }
   });
+
+  // will have to wait a sec, then refresh the page
+  gulp.watch([
+    'app/**/*.html',
+    'app/scripts/**/*.js',
+    'app/images/**/*',
+    '.tmp/fonts/**/*'
+  ], ['package'], reload);
 });
 
 gulp.task('serve:test', ['produce'], function() {

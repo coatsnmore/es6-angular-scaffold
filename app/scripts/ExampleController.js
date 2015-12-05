@@ -7,6 +7,6 @@ export default class ExampleController {
   }
 
   printSecret() {
-    console.log('A secret hello to ' + this.name);
+    console.log('A secret glhf to ' + this.name);
   }
 }
