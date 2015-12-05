@@ -46,13 +46,17 @@
 
 # Common Tasks
 
-Basic watching for changes and republish
+Basic watching for changes and republish (no minification/uglification)
 
     gulp serve
 
 Build/Minify/etc and publish to distribution folder.  Also watches, but needs refresh.
 
     gulp serve:dist
+
+Build/Watch/Build.
+
+    gulp watch:build
 
 # Disclaimer
 

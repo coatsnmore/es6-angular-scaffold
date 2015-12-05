@@ -206,6 +206,15 @@ gulp.task('serve:dist', ['package'], function() {
   ], ['package'], reload);
 });
 
+gulp.task('watch:build', ['package'], function() {
+  gulp.watch([
+    'app/**/*.html',
+    'app/scripts/**/*.js',
+    'app/images/**/*',
+    '.tmp/fonts/**/*'
+  ], ['build']);
+});
+
 gulp.task('serve:test', ['produce'], function() {
   browserSync({
     notify: false,
